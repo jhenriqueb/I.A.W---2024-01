@@ -1,0 +1,8 @@
+p{
+    color:white;
+}
+body{
+background-image:radial-gradient(blue, black);
+width: 100vh;
+height: 100vh;
+}

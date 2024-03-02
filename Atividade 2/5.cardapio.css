@@ -1,0 +1,8 @@
+h1{
+    background-color: brown;
+    color: white;
+}
+body{
+    color: white;
+    background-image:linear-gradient(to left, green, black);
+}

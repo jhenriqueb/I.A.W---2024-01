@@ -1,0 +1,9 @@
+p{
+    color: white;
+}
+
+body{
+    background-image: conic-gradient(red, yellow, green, blue, red);
+    width: 100vh;
+    height: 100vh;
+}

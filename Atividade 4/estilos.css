@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    background-image: url(imagens/fundo_neo.jpg);
+    background-repeat: repeat-y;
+    background-position: right;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:lightgreen;
+    text-align: justify;
+    width: 88%;
+    line-height: 1.2;
+}
+
+.what{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    background-image: url(imagens/fundo_matrix.jpg);
+    width: 88%;
+}
+
+.what_2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    background-image: url(imagens/fundo_matrix.jpg);
+    width: 88%;
+    text-align: right;
+}

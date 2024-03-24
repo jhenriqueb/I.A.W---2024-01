@@ -1,0 +1,31 @@
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    background-color: black;
+}
+
+body{
+    color: black;
+    background-color: darkgrey;
+}
+
+.d{
+    list-style-type: upper-roman
+}
+
+.seta_e{
+    list-style-image:url(imagens/arrow_left_icon_143116.png);
+}
+
+.seta_d{
+    list-style-image: url(imagens/1491254399-rightarrowfowardsign_82944.png);
+}
+
+.parado{
+    list-style-image: url(imagens/sinal-de-parada.png);
+}

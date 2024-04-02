@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        function escurecerPagina() {
+          document.body.style.backgroundColor = "black";
+        }
+      
+        function clarearPagina() {
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+</head>
+<body>
+    <h1>Página 2</h1>
+    <a href="index3.html#pag3">Id para pág 3</a>
+    <ul>    
+        <li><a href="index1.html" target="_blank">Página 1</a></li>
+        <li><a href="index3.html" target="_blank">Página 3</a></li>
+    </ul>
+
+    <h1>Link com imagem</h1>
+    <a href="https://github.com/jhenriqueb">
+        <img src="imagens/github.png" alt="Github">
+    </a>
+    
+    <h1>Link para clarear/escurecer</h1>
+    <a href="#" onclick="escurecerPagina()">Escurecer Página</a>
+    <a href="#" onclick="clarearPagina()">Clarear Página</a>
+
+</body>
+</html>

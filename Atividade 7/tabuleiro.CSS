@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightblue;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    height: 50px;
+    width: 50px;
+}
+
+.branco{
+    background-image: url('branco.jpg');
+}
+
+.preto{
+    background-image: url('preto.png');
+}

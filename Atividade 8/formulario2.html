@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+    <script>
+        // Função para atualizar a idade em tempo real
+        function calcularIdade() {
+            const anoNascimento = document.getElementById('dataNascimento').value.split('-')[0];
+            const anoAtual = new Date().getFullYear();
+            const idade = anoAtual - anoNascimento;
+            document.getElementById('idadeCalculada').innerText = idade;
+        }
+    </script>
+</head>
+<body>
+    <h1>Formulário Completo</h1>
+    <form>
+        <!-- Datalist para pesquisa de produtos -->
+        <label for="produto">Produto:</label>
+        <input list="produtos" id="produto" name="produto" placeholder="Digite o nome do produto">
+        <datalist id="produtos">
+            <option value="Produto A">
+            <option value="Produto B">
+            <option value="Produto C">
+            <option value="Produto D">
+        </datalist>
+        <br>
+
+        <!-- Campo de input email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+        <br>
+
+        <!-- Campo de input telefone -->
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+        <br>
+
+        <!-- Campo de input number com min e max -->
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" max="120" required>
+        <br>
+
+        <!-- Campo de input range -->
+        <label for="urgencia">Nível de urgência (1 a 10):</label>
+        <input type="range" id="urgencia" name="urgencia" min="1" max="10" step="1" value="5">
+        <br>
+
+        <!-- Campo de input date -->
+        <label for="dataNascimento">Data de Nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" onchange="calcularIdade()" required>
+        <br>
+
+        <!-- Campo de input time -->
+        <label for="horario">Horário preferencial para ligações:</label>
+        <input type="time" id="horario" name="horario">
+        <br>
+
+        <!-- Campo de input color -->
+        <label for="corTema">Escolha a cor do tema:</label>
+        <input type="color" id="corTema" name="corTema">
+        <br>
+
+        <!-- Fieldset para informações pessoais -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required autofocus>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+            <br>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" onchange="calcularIdade()" required>
+            <br>
+            <span>Idade: <output id="idadeCalculada">--</output> anos</span>
+        </fieldset>
+        <br>
+
+        <!-- Botões de enviar e resetar -->
+        <button type="submit">Enviar</button>
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

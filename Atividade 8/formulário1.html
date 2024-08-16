@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição para Evento Online</title>
+</head>
+<body>
+    <h1>Inscreva-se no Nosso Evento Online</h1>
+    <form action="http://exemplo.com/inscricao" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <button type="submit">Inscrever-se</button>
+    </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Feedback com Botões</title>
+</head>
+<body>
+    <h1>Formulário de Feedback</h1>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" maxlength="12" required>
+        <br>
+        <fieldset>
+            <legend>Qual o seu nível de satisfação com o nosso serviço?</legend>
+            <input type="radio" id="satisfeito" name="satisfacao" value="satisfeito" required>
+            <label for="satisfeito">Satisfeito</label>
+            <br>
+            <input type="radio" id="neutro" name="satisfacao" value="neutro">
+            <label for="neutro">Neutro</label>
+            <br>
+            <input type="radio" id="insatisfeito" name="satisfacao" value="insatisfeito">
+            <label for="insatisfeito">Insatisfeito</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Quais newsletters você deseja assinar?</legend>
+            <input type="checkbox" id="novidades" name="newsletter" value="novidades">
+            <label for="novidades">Novidades</label>
+            <br>
+            <input type="checkbox" id="promocoes" name="newsletter" value="promocoes">
+            <label for="promocoes">Promoções</label>
+            <br>
+            <input type="checkbox" id="artigos" name="newsletter" value="artigos">
+            <label for="artigos">Artigos Técnicos</label>
+        </fieldset>
+        <br>
+        <label for="frequencia">Frequência das newsletters:</label>
+        <select id="frequencia" name="frequencia" required>
+            <option value="diariamente">Diariamente</option>
+            <option value="semanalmente">Semanalmente</option>
+            <option value="mensalmente">Mensalmente</option>
+        </select>
+        <br>
+        <label for="comentarios">Como podemos melhorar nossos serviços?</label>
+        <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Descreva aqui..." required></textarea>
+        <br>
+        <!-- Botões de Enviar e Redefinir -->
+        <button type="submit">Enviar Feedback</button>
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
